@@ -1,0 +1,297 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cairo', Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    direction: ltr;
+    text-align: left;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: white;
+    min-height: 100vh;
+    box-shadow: 0 0 15px rgba(0,0,0,0.08);
+}
+
+/* Google Ads Sections */
+.ad-section {
+    margin: 8px 0 0 0;
+    padding: 4px;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    text-align: center;
+    border: 1px dashed #ddd;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-ad {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.adsbygoogle {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.adsbygoogle::before {
+    content: "إعلان";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ccc;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+/* Profile Section */
+.profile-section {
+    text-align: center;
+    margin: 30px 0 40px 0;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    background: white;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Social Links Container */
+.social-links-container {
+    margin: 30px 0;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    padding: 18px 0;
+    border-bottom: 1px solid #e0e0e0;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.social-icon {
+    font-size: 20px;
+    margin-right: 12px;
+    min-width: 25px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.snapchat-icon {
+    color: #FFFC00;
+}
+
+.tiktok-icon {
+    color: #ff0050;
+}
+
+.kick-icon {
+    color: #53fc18;
+}
+
+.whatsapp-icon {
+    color: #25D366;
+}
+
+.social-link:hover {
+    background-color: #f8f9fa;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 8px;
+    transform: translateX(5px);
+}
+
+.social-link:hover .social-icon {
+    transform: scale(1.2);
+}
+
+.social-link:last-child {
+    border-bottom: none;
+}
+
+.platform-name {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    flex: 1;
+}
+
+.number {
+    font-size: 12px;
+    color: #666;
+    font-weight: 300;
+    min-width: 25px;
+    text-align: right;
+}
+
+/* Footer */
+.footer {
+    margin-top: 20px;
+    padding: 10px 0;
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+}
+
+.footer-text p {
+    color: #666;
+    font-size: 10px;
+    font-weight: 300;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 12px;
+        box-shadow: none;
+        max-width: 350px;
+    }
+    
+    .profile-image {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .profile-image img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .social-link {
+        padding: 15px 0;
+        font-size: 13px;
+    }
+    
+    .social-icon {
+        font-size: 18px;
+        margin-right: 10px;
+    }
+    
+    .ad-section {
+        margin: 6px 0;
+        padding: 3px;
+        width: 100%;
+        height: 40px;
+    }
+    
+    .adsbygoogle::before {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 8px;
+        max-width: 320px;
+    }
+    
+    .profile-image {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .profile-image img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .social-link {
+        padding: 12px 0;
+        font-size: 12px;
+    }
+    
+    .social-icon {
+        font-size: 16px;
+        margin-right: 8px;
+    }
+    
+    .platform-name {
+        font-size: 12px;
+    }
+    
+    .number {
+        font-size: 10px;
+    }
+    
+    .ad-section {
+        margin: 4px 0;
+        padding: 2px;
+        width: 100%;
+        height: 35px;
+    }
+}
+
+/* Smooth Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.social-link {
+    animation: fadeIn 0.6s ease forwards;
+}
+
+.social-link:nth-child(1) { animation-delay: 0.1s; }
+.social-link:nth-child(2) { animation-delay: 0.2s; }
+.social-link:nth-child(3) { animation-delay: 0.3s; }
+.social-link:nth-child(4) { animation-delay: 0.4s; }
+
+.profile-image {
+    animation: fadeIn 0.8s ease forwards;
+}
+
+/* Clean Modern Look */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.social-link {
+    border-bottom: 1px solid rgba(224, 224, 224, 0.8);
+}
+
+.social-link:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+} 
