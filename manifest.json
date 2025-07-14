@@ -1,0 +1,35 @@
+{
+  "name": "سعد محمد - ناقد طعام ومشروبات",
+  "short_name": "سعدمحمد",
+  "description": "اكتشف أفضل المطاعم والمشروبات مع سعد محمد - ناقد طعام محترف يشارككم تجاربه وتقييماته",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7fafc",
+  "theme_color": "#e74c3c",
+  "orientation": "portrait",
+  "scope": "/",
+  "lang": "ar",
+  "icons": [
+    {
+      "src": "my-profile.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "my-profile.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["food", "lifestyle", "entertainment"],
+  "screenshots": [
+    {
+      "src": "my-profile.jpg",
+      "sizes": "400x800",
+      "type": "image/jpeg",
+      "form_factor": "narrow"
+    }
+  ]
+} 

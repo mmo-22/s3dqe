@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تقييماتي - سعد محمد | ناقد طعام ومشروبات</title>
+    <meta name="description" content="شاهد تقييماتي المفصلة لأفضل المطاعم والمشروبات في المملكة العربية السعودية">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <img src="my-profile.jpg" alt="سعد محمد" class="logo-img">
+                <span class="logo-text">سعد محمد</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+                <li><a href="reviews.html" class="nav-link active">تقييماتي</a></li>
+                <li><a href="about.html" class="nav-link">من أنا</a></li>
+                <li><a href="contact.html" class="nav-link">تواصل معي</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Reviews Hero Section -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-content">
+                    <h1 class="page-title">تقييماتي</h1>
+                    <p class="page-subtitle">اكتشف أفضل المطاعم والمشروبات من خلال تقييماتي المفصلة</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Content -->
+        <section class="reviews-content">
+            <div class="container">
+                <!-- Filter Categories -->
+                <div class="filter-categories">
+                    <button class="filter-btn active" data-category="all">جميع التقييمات</button>
+                    <button class="filter-btn" data-category="arabic">مطاعم عربية</button>
+                    <button class="filter-btn" data-category="coffee">مقاهي وقهوة</button>
+                    <button class="filter-btn" data-category="fast-food">وجبات سريعة</button>
+                </div>
+
+                <!-- Reviews Grid -->
+                <div class="reviews-grid">
+                    <!-- Arabic Restaurant Review -->
+                    <div class="review-card" data-category="arabic">
+                        <div class="review-image">
+                            <img src="https://via.placeholder.com/400x300/e74c3c/ffffff?text=مطعم+الشرق" alt="مطعم الشرق">
+                            <div class="review-rating">
+                                <span class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="rating-number">5.0</span>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <h3 class="review-title">مطعم الشرق - الخبر</h3>
+                            <p class="review-description">أشهى الأطباق العربية التقليدية مع نكهات عصرية مميزة. المندي والكابلي من أفضل ما تذوقت!</p>
+                            <div class="review-details">
+                                <span class="price-range">$$$</span>
+                                <span class="location"><i class="fas fa-map-marker-alt"></i> الخبر - شارع الملك خالد</span>
+                            </div>
+                            <div class="review-tags">
+                                <span class="tag">مندي</span>
+                                <span class="tag">كابلي</span>
+                                <span class="tag">مأكولات عربية</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Coffee Shop Review -->
+                    <div class="review-card" data-category="coffee">
+                        <div class="review-image">
+                            <img src="https://via.placeholder.com/400x300/f39c12/ffffff?text=مقهى+القهوة+المختصة" alt="مقهى القهوة المختصة">
+                            <div class="review-rating">
+                                <span class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </span>
+                                <span class="rating-number">4.0</span>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <h3 class="review-title">مقهى القهوة المختصة - الخبر</h3>
+                            <p class="review-description">قهوة مختصة ممتازة مع أجواء هادئة مثالية للعمل والقراءة. الإسبريسو من الأفضل!</p>
+                            <div class="review-details">
+                                <span class="price-range">$$</span>
+                                <span class="location"><i class="fas fa-map-marker-alt"></i> الخبر - شارع الأمير محمد</span>
+                            </div>
+                            <div class="review-tags">
+                                <span class="tag">قهوة مختصة</span>
+                                <span class="tag">إسبريسو</span>
+                                <span class="tag">أجواء هادئة</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fast Food Review -->
+                    <div class="review-card" data-category="fast-food">
+                        <div class="review-image">
+                            <img src="https://via.placeholder.com/400x300/27ae60/ffffff?text=برجر+هاوس" alt="برجر هاوس">
+                            <div class="review-rating">
+                                <span class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="rating-number">4.5</span>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <h3 class="review-title">برجر هاوس - الخبر</h3>
+                            <p class="review-description">برجر لذيذ مع لحم طازج وخضروات مقرمشة. البطاطس المقلية من الأفضل في المدينة!</p>
+                            <div class="review-details">
+                                <span class="price-range">$$</span>
+                                <span class="location"><i class="fas fa-map-marker-alt"></i> الخبر - شارع الملك خالد</span>
+                            </div>
+                            <div class="review-tags">
+                                <span class="tag">برجر</span>
+                                <span class="tag">بطاطس مقلية</span>
+                                <span class="tag">وجبات سريعة</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Another Arabic Restaurant -->
+                    <div class="review-card" data-category="arabic">
+                        <div class="review-image">
+                            <img src="https://via.placeholder.com/400x300/e74c3c/ffffff?text=مطعم+الضيافة" alt="مطعم الضيافة">
+                            <div class="review-rating">
+                                <span class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </span>
+                                <span class="rating-number">4.0</span>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <h3 class="review-title">مطعم الضيافة - الخبر</h3>
+                            <p class="review-description">مأكولات حجازية أصيلة مع نكهات تقليدية رائعة. الكبسة والهريسة من الأطباق المميزة!</p>
+                            <div class="review-details">
+                                <span class="price-range">$$</span>
+                                <span class="location"><i class="fas fa-map-marker-alt"></i> الخبر - شارع العزيزية</span>
+                            </div>
+                            <div class="review-tags">
+                                <span class="tag">مأكولات حجازية</span>
+                                <span class="tag">كبسة</span>
+                                <span class="tag">هريسة</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Another Coffee Shop -->
+                    <div class="review-card" data-category="coffee">
+                        <div class="review-image">
+                            <img src="https://via.placeholder.com/400x300/f39c12/ffffff?text=مقهى+الذوق" alt="مقهى الذوق">
+                            <div class="review-rating">
+                                <span class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </span>
+                                <span class="rating-number">4.8</span>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <h3 class="review-title">مقهى الذوق - الخبر</h3>
+                            <p class="review-description">قهوة تركية ممتازة مع حلويات شرقية لذيذة. الكنافة والبقلاوة من الأفضل!</p>
+                            <div class="review-details">
+                                <span class="price-range">$$</span>
+                                <span class="location"><i class="fas fa-map-marker-alt"></i> الخبر - شارع الأمير محمد</span>
+                            </div>
+                            <div class="review-tags">
+                                <span class="tag">قهوة تركية</span>
+                                <span class="tag">حلويات شرقية</span>
+                                <span class="tag">كنافة</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Another Fast Food -->
+                    <div class="review-card" data-category="fast-food">
+                        <div class="review-image">
+                            <img src="https://via.placeholder.com/400x300/27ae60/ffffff?text=بيتزا+هاوس" alt="بيتزا هاوس">
+                            <div class="review-rating">
+                                <span class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </span>
+                                <span class="rating-number">4.2</span>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <h3 class="review-title">بيتزا هاوس - الخبر</h3>
+                            <p class="review-description">بيتزا إيطالية أصيلة مع عجينة رقيقة وطازجة. الجبنة الموزاريلا من الأفضل!</p>
+                            <div class="review-details">
+                                <span class="price-range">$$</span>
+                                <span class="location"><i class="fas fa-map-marker-alt"></i> الخبر - شارع الملك عبدالله</span>
+                            </div>
+                            <div class="review-tags">
+                                <span class="tag">بيتزا إيطالية</span>
+                                <span class="tag">عجينة رقيقة</span>
+                                <span class="tag">جبنة موزاريلا</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>سعد محمد</h3>
+                    <p>ناقد طعام ومشروبات محترف</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>الصفحات</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="reviews.html">تقييماتي</a></li>
+                        <li><a href="about.html">من أنا</a></li>
+                        <li><a href="contact.html">تواصل معي</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>قانوني</h4>
+                    <ul class="footer-links">
+                        <li><a href="privacy-policy.html">سياسة الخصوصية</a></li>
+                        <li><a href="terms.html">شروط الاستخدام</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 سعد محمد. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const reviewCards = document.querySelectorAll('.review-card');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+
+                    const category = this.getAttribute('data-category');
+
+                    reviewCards.forEach(card => {
+                        if (category === 'all' || card.getAttribute('data-category') === category) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

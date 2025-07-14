@@ -3,71 +3,271 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>سعدمحمد</title>
+    
+    <!-- SEO Meta Tags -->
+    <title>سعدمحمد | ناقد طعام ومشروبات</title>
+    <meta name="description" content="اكتشف أفضل المطاعم والمشروبات مع سعدمحمد - ناقد طعام محترف يشارككم تجاربه وتقييماته لأشهى الأطباق وألذ المشروبات">
+    <meta name="keywords" content="تقييم طعام, نقد مطاعم, مشروبات, مطاعم, أطباق, سعدمحمد, طعام عربي, مطاعم الرياض">
+    <meta name="author" content="سعدمحمد">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="سعدمحمد | ناقد طعام ومشروبات">
+    <meta property="og:description" content="اكتشف أفضل المطاعم والمشروبات مع سعدمحمد - ناقد طعام محترف">
+    <meta property="og:image" content="my-profile.jpg">
+    <meta property="og:url" content="">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:description" content="اكتشف أفضل المطاعم والمشروبات مع سعدمحمد - ناقد طعام محترف">
+    <meta name="twitter:image" content="my-profile.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="my-profile.jpg">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#e74c3c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="سعدمحمد - ناقد طعام">
+    <link rel="apple-touch-icon" href="my-profile.jpg">
+    
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
     <!-- Google AdSense Script -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7261735449940731"
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_PUBLISHER_ID"
             crossorigin="anonymous"></script>
+            
+    <!-- Google Analytics (اختياري) -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script> -->
 </head>
 <body>
-    <div class="container">
-        <!-- Profile Section -->
-        <div class="profile-section">
-            <div class="profile-image">
-                <img src="my-profile.jpg" alt="Profile Image" />
+    <!-- Navigation Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <img src="my-profile.jpg" alt="سعدمحمد" class="logo-img">
+                <span class="logo-text">سعدمحمد</span>
             </div>
-        </div>
-
-        <!-- Social Links -->
-        <div class="social-links-container">
-            <a href="https://snapchat.com/add/s3dqe" class="social-link" target="_blank">
-                <i class="fab fa-snapchat-ghost social-icon snapchat-icon"></i>
-                <span class="platform-name">SNAPCHAT | سناب شات</span>
-                <span class="number">01</span>
-            </a>
-            
-            <a href="https://tiktok.com/@s3dqe" class="social-link" target="_blank">
-                <i class="fab fa-tiktok social-icon tiktok-icon"></i>
-                <span class="platform-name">TIKTOK | تيك توك</span>
-                <span class="number">02</span>
-            </a>
-            
-            <a href="https://kick.com/s3dqe" class="social-link" target="_blank">
-                <i class="fas fa-play-circle social-icon kick-icon"></i>
-                <span class="platform-name">KICK | كيك</span>
-                <span class="number">03</span>
-            </a>
-            
-            <a href="https://wa.me/966566772627" class="social-link" target="_blank">
-                <i class="fab fa-whatsapp social-icon whatsapp-icon"></i>
-                <span class="platform-name">WHATSAPP | واتساب</span>
-                <span class="number">04</span>
-            </a>
-        </div>
-
-        <!-- Footer -->
-        <div class="footer">
-            <div class="footer-text">
-                <p>سعدمحمد © 2025</p>
-                <p><a href="privacy-policy.html" style="color: #666; font-size: 10px; text-decoration: none;">سياسة الخصوصية</a></p>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">الرئيسية</a></li>
+                <li><a href="reviews.html" class="nav-link">تقييماتي</a></li>
+                <li><a href="#videos" class="nav-link">مقاطع الفيديو</a></li>
+                <li><a href="about.html" class="nav-link">من أنا</a></li>
+                <li><a href="contact.html" class="nav-link">تواصل معي</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-        </div>
+        </nav>
+    </header>
 
-        <!-- Google Ads Bottom Banner -->
-        <div class="ad-section bottom-ad">
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="profile-section">
+                        <div class="profile-image">
+                            <img src="my-profile.jpg" alt="سعدمحمد" />
+                        </div>
+                        <h1 class="hero-title">سعدمحمد</h1>
+                        <p class="hero-subtitle">ناقد طعام ومشروبات محترف</p>
+                        <p class="hero-description">أشارككم تجاربي وتقييماتي لأفضل المطاعم والمشروبات في مدينة الخبر والمملكة العربية السعودية</p>
+                        
+                        <!-- Social Links -->
+                        <div class="social-links-container">
+                            <a href="https://snapchat.com/add/s3dqe" class="social-link" target="_blank">
+                                <i class="fab fa-snapchat-ghost social-icon snapchat-icon"></i>
+                                <span class="platform-name">SNAPCHAT | سناب شات</span>
+                                <span class="number">01</span>
+                            </a>
+                            
+                            <a href="https://tiktok.com/@s3dqe" class="social-link" target="_blank">
+                                <i class="fab fa-tiktok social-icon tiktok-icon"></i>
+                                <span class="platform-name">TIKTOK | تيك توك</span>
+                                <span class="number">02</span>
+                            </a>
+                            
+                            <a href="https://kick.com/s3dqe" class="social-link" target="_blank">
+                                <i class="fas fa-play-circle social-icon kick-icon"></i>
+                                <span class="platform-name">KICK | كيك</span>
+                                <span class="number">03</span>
+                            </a>
+                            
+                            <a href="https://wa.me/966566772627" class="social-link" target="_blank">
+                                <i class="fab fa-whatsapp social-icon whatsapp-icon"></i>
+                                <span class="platform-name">WHATSAPP | واتساب</span>
+                                <span class="number">04</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gradient Cards Section -->
+        <section id="reviews" class="articles-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">مجالات التقييم</h2>
+                    <p class="section-subtitle">تخصصاتي في عالم الطعام والمشروبات</p>
+                </div>
+                
+                <div class="articles-grid">
+                    <div class="gradient-card">
+                        <div class="gradient-bg ai-gradient">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">المطاعم العربية</h3>
+                            <p class="card-description">تقييم أفضل المطاعم العربية والأطباق التقليدية</p>
+                        </div>
+                    </div>
+
+                    <div class="gradient-card">
+                        <div class="gradient-bg finance-gradient">
+                            <i class="fas fa-coffee"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">المشروبات والقهوة</h3>
+                            <p class="card-description">تقييم المقاهي والمشروبات الساخنة والباردة</p>
+                        </div>
+                    </div>
+
+                    <div class="gradient-card">
+                        <div class="gradient-bg tech-gradient">
+                            <i class="fas fa-hamburger"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">الوجبات السريعة</h3>
+                            <p class="card-description">تقييم مطاعم الوجبات السريعة والبرجر</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TikTok Videos Section -->
+        <section id="videos" class="videos-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">أحدث التقييمات</h2>
+                    <p class="section-subtitle">شاهد أحدث مقاطع التقييم والمحتوى المرئي</p>
+                </div>
+                
+                <div class="videos-grid">
+                    <div class="video-card">
+                        <div class="video-embed">
+                            <iframe 
+                                src="https://www.tiktok.com/embed/v2/7517957218189249800" 
+                                width="325" 
+                                height="580" 
+                                frameborder="0" 
+                                scrolling="no" 
+                                allowtransparency="true"
+                                allow="encrypted-media">
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <div class="video-card">
+                        <div class="video-embed">
+                            <iframe 
+                                src="https://www.tiktok.com/embed/v2/7513328047848754450" 
+                                width="325" 
+                                height="580" 
+                                frameborder="0" 
+                                scrolling="no" 
+                                allowtransparency="true"
+                                allow="encrypted-media">
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <div class="video-card">
+                        <div class="video-embed">
+                            <iframe 
+                                src="https://www.tiktok.com/embed/v2/7513887464646249746" 
+                                width="325" 
+                                height="580" 
+                                frameborder="0" 
+                                scrolling="no" 
+                                allowtransparency="true"
+                                allow="encrypted-media">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="videos-cta">
+                    <a href="https://tiktok.com/@s3dqe" class="btn-primary" target="_blank">
+                        <i class="fab fa-tiktok"></i>
+                        شاهد جميع التقييمات على التيك توك
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ad Section -->
+        <div class="ad-section">
             <ins class="adsbygoogle"
                  style="display:block"
-                 data-ad-client="ca-pub-7261735449940731"
-                 data-ad-slot="YOUR_AD_SLOT_ID_BOTTOM"
+                 data-ad-client="ca-pub-YOUR_PUBLISHER_ID"
+                 data-ad-slot="YOUR_AD_SLOT_ID"
                  data-ad-format="auto"
                  data-full-width-responsive="true"></ins>
             <script>
                  (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
         </div>
-    </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>سعدمحمد</h3>
+                    <p>ناقد طعام ومشروبات محترف</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>الصفحات</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="reviews.html">تقييماتي</a></li>
+                        <li><a href="about.html">من أنا</a></li>
+                        <li><a href="contact.html">تواصل معي</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>قانوني</h4>
+                    <ul class="footer-links">
+                        <li><a href="privacy-policy.html">سياسة الخصوصية</a></li>
+                        <li><a href="terms.html">شروط الاستخدام</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 سعدمحمد. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
